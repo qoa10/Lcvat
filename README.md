@@ -380,6 +380,18 @@ This converts all YOLO bounding-box labels into YOLO-seg polygon labels.
 python box2mask_sam2.py --images-dir "F:\Tao\dataset\images" --labels-dir "F:\Tao\dataset\labels" --out-dir "F:\Tao\dataset\labels_seg" --model-id "facebook/sam2-hiera-large"
 ```
 
+# ## 6. **Run SAM2 create**
+
+This converts all YOLO bounding-box labels into YOLO-seg polygon labels.
+
+```bash
+ python F:\CrackDetection_v2.2.3\sam2seg\code\yolo_sam2_to_yoloseg.py `
+>>   --images-dir "F:\CrackDetection_v2.2.3\sam2seg\data\acp_subset\images\val" `
+>>   --det-labels-dir "F:\CrackDetection_v2.2.3\sam2seg\data\acp_subset\labels\val" `
+>>   --seg-labels-dir "F:\CrackDetection_v2.2.3\sam2seg\data\acp_subset\labels_seg\val" `
+>>   --debug-vis-dir "F:\CrackDetection_v2.2.3\sam2seg\data\acp_subset\debug_vis\val" `
+>>   --model-id "facebook/sam2-hiera-large"
+
 ---
 
 # ## 6. **Convert YOLO-seg polygon labels → COCO format for CVAT**
